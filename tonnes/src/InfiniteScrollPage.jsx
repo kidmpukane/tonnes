@@ -1,13 +1,15 @@
 import React from 'react'
 import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
 import { ObjectivesPage, ObjectivesTop } from './pages/ObjectivesPage'
 
 const InfiniteScrollPage = () => {
   return (
     <div>
         <HomePage/>
-        <ObjectivesTop/>
         <ObjectivesPage/>
+        <ObjectivesTop/>
+        <AboutPage/>
     </div>
   )
 }

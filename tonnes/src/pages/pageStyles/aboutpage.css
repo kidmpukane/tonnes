@@ -1,0 +1,54 @@
+:root {
+    --faded-yellow: #FFE091;
+    --faded-blue: #B9EBFF;
+    --faded-red: #FFB9BA;
+    --faded-green: #D5FF90;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically */
+    flex-direction: row;
+    gap: 2rem; 
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.about-img-container {
+    flex: 1; /* Allow image container to take up equal space */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+}
+
+.about-img {
+    border-radius: 2rem;
+    width: 100%; /* Ensure the image fills the container */
+
+    height: auto; /* Maintain aspect ratio */
+}
+
+.about-txt-container {
+    flex: 2; /* Allow the text to take up more space */
+    padding: 2rem;
+    position: relative;
+    max-width: 700px; /* Optional: Limit the text width */
+}
+
+.about-header {
+    font-size: 8rem; /* Adjust font-size for better readability */
+    color: var(--faded-yellow);
+}
+
+.about-sub-header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-body-container {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}

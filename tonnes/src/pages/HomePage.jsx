@@ -1,22 +1,26 @@
 import React from 'react'
-// import "./styles/pageStyles.css"
-
+import "./pageStyles/homepage.css"
 
 const HomePage = () => {
 
   
   return (
 
-      <div className='homepage-container'>
-      <h2 className='homepage-hook-one'>NOW!</h2>
-      <h3 className='homepage-hook-second'>offering subscription free</h3>
-      <h1 className='homepage-offerings'>WEBSITE DESIGN</h1>
+    <div className="homepage-main-container">
+    <div className="upper-homepage-container">
+      <span>WELCOME</span>
+      <span>TO THE</span>
+      <span>TONNES</span>
+    </div>
+      <div className="homepage-header-container">
+        <h1 className='body-header'>TONNES</h1>
 
-      <div className='homepage-cta-container'>
-        <h3 className='homepage-cta'>your all in one end to end studio, plan, build, launch your ideas</h3>
       </div>
-      <div className='homepage-button-cta'>
-
+      <div className="homepage-body-container">
+        <p className="header-upper-span">
+        A community, a meme coin created in support of Pavel Durov and his groundbreaking Telegram Open Network (TON).         </p>
+      </div>
+      <div className="homepage-footer-container">
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./pageStyles/objectives.css"
+import "../components/componentStyles/componentStyles.css"
 import ObjectiveSquares from '../components/objectiveSquares'
 import mySvg1 from "../assets/yw-vr-working.svg"
 import svg2 from "../assets/svg2.svg"
@@ -20,7 +21,12 @@ const mySvg6 = svg6
 const mySvg7 = svg7
 const mySvg8 = svg8
 
-
+const colors = [
+  "var(--faded-yellow)",
+  "var(--faded-blue)",
+  "var(--faded-red)",
+  "var(--faded-green)"
+];
 
 const myCardsInfo = [
   {
@@ -79,15 +85,18 @@ const ObjectivesTop = () => {
 const ObjectivesBottom = () => {
     return( 
       <div className='container-of-boxes'>
-        {myCardsInfo.map((card, index) => (
-          <ObjectiveSquares
-            key={index}
-            boxImage={card.boxImage}
-            boxHeading={card.boxHeading}
-            boxBody={card.boxBody}
-          />
-        ))}
-      </div>
+      {myCardsInfo.map((card, index) => (
+        <ObjectiveSquares
+          key={index}
+          boxImage={card.boxImage}
+          boxHeading={card.boxHeading}
+          boxBody={card.boxBody}
+          style={{
+            backgroundColor: colors[index % colors.length],  // Cycle through colors
+          }}
+        />
+      ))}
+    </div>
     )
 }
 

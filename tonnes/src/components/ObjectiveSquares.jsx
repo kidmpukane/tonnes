@@ -2,20 +2,17 @@ import React from 'react'
 import "./componentStyles/componentStyles.css"
 
 
-const ObjectiveSquares = (props) => {
-  return (
-    <div className='box-container'>
-        <img className='box-image' alt={"no-image"} src={props.boxImage}/>
+const ObjectiveSquares = ({ boxImage, boxHeading, boxBody, style }) => {
+    return (
+      <div className='box-container' style={style}>
+        <img className='box-image' src={boxImage} alt="Objective" />
         <div className='box-text-container'>
-            <h1 className='box-header'>
-            {props.boxHeading}
-            </h1>
-            <span className='box-body'>
-                {props.boxBody}
-            </span>
+          <h1 className='box-header'>{boxHeading}</h1>
+          <p className='box-body'>{boxBody}</p>
         </div>
-    </div>
-  )
-}
+      </div>
+    );
+  };
+  
 
 export default ObjectiveSquares

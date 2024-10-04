@@ -1,26 +1,39 @@
+:root {
+    --faded-yellow: #FFE091;
+    --faded-blue: #B9EBFF;
+    --faded-red: #FFB9BA;
+    --faded-green: #D5FF90;
+
+  }
+
+
 .box-container {
-    
-    background-color: #FFE091;
+
     padding: 1.2rem;
     border-radius: 2rem;
     display: flex; 
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    text-align: right; 
+    text-align: right;
+    min-width: 30rem;
+    height: 30rem; /* Fixed height */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    box-sizing: border-box; /* Includes padding in the width and height */
 }
 
 .box-image {
-    width: 40%; /* Adjust to reduce the image size */
+    width: 100%;  /* Ensures the image takes full width of the box */
     height: auto;
     border-radius: 2rem;
-
+    max-height: 50%; /* Limits the image height to half the box */
 }
 
 .box-text-container {
-    padding: 2rem;
+    padding: 1rem;
     text-align: left;
-
+    overflow: auto; /* Adds scroll if the text overflows */
+    flex-grow: 1; /* Allows text to take up the remaining space */
 }
 
 .box-header {
@@ -30,5 +43,15 @@
 
 .box-body {
     font-size: 0.7em;
-    text-align: right
+    text-align: left;
+}
+
+@media (max-width: 960px) {
+
+    .box-container {
+
+        min-width: 25rem;
+        height: 25rem;
+    }
+    
 }

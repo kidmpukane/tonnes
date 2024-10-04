@@ -1,3 +1,12 @@
+:root {
+    --faded-yellow: #FFE091;
+    --faded-blue: #B9EBFF;
+    --faded-red: #FFB9BA;
+    --faded-green: #D5FF90;
+
+  }
+
+
 .top-obj-container {
     display: flex;
     justify-content: space-between; /* Ensures space between h1 and h2 */

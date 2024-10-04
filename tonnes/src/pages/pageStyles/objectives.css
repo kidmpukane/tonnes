@@ -33,6 +33,14 @@
 
 .obj-container {
     background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.obj-container-header {
+    color: white;
+    font-size: 6rem;
+    align-items: center;
 }
 
 @media (max-width: 960px) {

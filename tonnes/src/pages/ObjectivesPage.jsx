@@ -95,10 +95,10 @@ const ObjectivesBottom = () => {
 const ObjectivesPage = () => {
   return (
     <div className='obj-container'>
-      {/* <div className='upper-container'><ObjectivesTop /></div> */}
+      <h1 className='obj-container-header'>OUR OBJECTIVES</h1>
       <div className='lower-container'><ObjectivesBottom/></div>
     </div>
   )
 }
 
-export default ObjectivesPage
+export{ ObjectivesPage, ObjectivesTop}

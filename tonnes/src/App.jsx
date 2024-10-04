@@ -1,11 +1,11 @@
 import React from 'react'
-import ObjectivesPage from './pages/ObjectivesPage'
+import InfiniteScrollPage from './InfiniteScrollPage'
 import "./App.css"
 
 const App = () => {
   return (
     <div>
-      <ObjectivesPage/>
+      <InfiniteScrollPage/>
     </div>
   )
 }

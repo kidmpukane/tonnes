@@ -1,0 +1,48 @@
+.top-obj-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between h1 and h2 */
+    align-items: center;
+    width: 100%;
+}
+
+.top-obj-h1 {
+    font-size: 4em;
+    flex-basis: 60%;
+
+
+}
+
+.top-obj-h2 {
+    font-size: 1em;
+    font-weight: 500;
+    padding: 2rem;
+    flex-basis: 40%; 
+    text-align: left; /* Optional: Aligns text to the right */
+}
+
+.container-of-boxes {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; /* Horizontal scroll bar */
+    max-width: 100%; /* Limits the container width to the parent container */
+    padding: 1rem;
+    gap: 1rem; /* Optional: Adds space between boxes */
+    scroll-behavior: smooth; /* Optional: Smooth scrolling effect */ 
+
+}
+
+.obj-container {
+    background-color: black;
+}
+
+@media (max-width: 960px) {
+    .top-obj-container {
+        display: grid;
+
+    }
+    .top-obj-h1 {
+
+    }
+    .top-obj-h2{}
+
+}

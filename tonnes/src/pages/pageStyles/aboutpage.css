@@ -52,3 +52,24 @@
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+@media (max-width: 960px) {
+
+    .about-container {
+        display: grid;
+        padding: 1rem;
+
+    }
+    
+    .about-txt-container {
+
+        padding: 1rem;
+
+    }
+    
+    .about-header {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+    
+}

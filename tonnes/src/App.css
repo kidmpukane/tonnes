@@ -24,3 +24,27 @@ nav {
     
     padding: 1rem;
 }
+.finger-svg {
+    position: absolute;
+    top: 48rem;
+    left: 22%;
+    width: 15rem;
+    z-index: 2;
+  }
+
+  @media (max-width: 960px) {
+    .finger-svg {
+        left: 2%;
+        width: 12rem;
+    
+      }
+  }
+  @media (max-width: 660px) {
+    .finger-svg {
+
+        top: 32rem;
+        left: 2%;
+        width: 12rem;
+
+      }
+  }

@@ -1,5 +1,8 @@
 import React from 'react'
 import "./pageStyles/homepage.css"
+import myCoins from "../assets/coins.svg"
+import myBankNotes from "../assets/banknote.svg"
+
 
 const HomePage = () => {
 
@@ -13,6 +16,9 @@ const HomePage = () => {
       <span>TONNES</span>
     </div>
       <div className="homepage-header-container">
+      <img src={myCoins} alt="Coins" className="coins-svg" />
+        <img src={myBankNotes} alt="Bank Notes" className="banknotes-svg" />
+        
         <h1 className='body-header'>TONNES</h1>
 
       </div>
